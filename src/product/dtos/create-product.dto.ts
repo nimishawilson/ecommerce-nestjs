@@ -15,10 +15,12 @@ class SourceLocationDto {
 class ManufacturerDto {
   @IsInt()
   @IsNotEmpty()
+  @ApiProperty({ description: 'manufacturer did' })
   id: number;
 
   @IsString()
   @IsNotEmpty()
+  @ApiProperty({ description: 'name of manufacturer' })
   name: string;
 }
 
